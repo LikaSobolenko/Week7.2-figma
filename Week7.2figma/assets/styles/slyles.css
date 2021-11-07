@@ -1,0 +1,127 @@
+.first {
+    background-image: url(../images/fonphoto.png);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 1fr;
+    margin-left: 30px;
+}
+
+.menu,
+.logo {
+    display: inline-block;
+    font-family: 'Roboto', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15px;
+}
+
+a.menu {
+    color: #E5E5E5;
+    font-size: 1em;
+}
+
+h1 {
+    display: block;
+    margin-top: 100px;
+    font-family: 'Lora', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #E5E5E5;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+h3 {
+    display: block;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    font-family: 'Lora', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #E5E5E5;
+    font-size: 12px;
+}
+
+.dots {
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+
+
+.hd {
+    font-family: 'Lora', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #495057;
+    font-size: 2em;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+a.am {
+    font-family: 'Lora', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: black;
+    margin-left: 30px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: 2fr;
+    justify-content: space-around;
+    justify-items: center;
+    margin-left: 30px;
+}
+
+.art {
+    margin: 10px;
+    font-family: 'Lora', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.date {
+    color: #6C757D;
+    font-size: 1em;
+}
+
+.nameart {
+    color: #495057;
+    font-size: 1.3em;
+}
+
+.art-cont {
+    color: #6C757D;
+    font-size: 1em;
+}
+
+.date,
+.nameart,
+.art-cont {
+    margin-top: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 30px;
+    }
+
+    h3 {
+        margin-right: 30px;
+    }
+
+    .articles {
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+        margin: 0;
+    }
+
+    .art {
+        margin: 0;
+    }
+}
